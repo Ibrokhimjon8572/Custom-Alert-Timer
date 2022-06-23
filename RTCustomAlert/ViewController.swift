@@ -17,8 +17,8 @@ class ViewController: UIViewController {
 
     @IBAction func actionOnSingleButtonAlert(_ sender: Any) {
         let customAlert = RTCustomAlert()
-        customAlert.alertTitle = "Thank you"
-        customAlert.alertMessage = "Your order successfully done."
+        customAlert.alertTitle = "Hello from Timer!!.."
+        customAlert.alertMessage = "10:00"
         customAlert.alertTag = 1
         customAlert.statusImage = UIImage.init(named: "smiley")
         customAlert.isCancelButtonHidden = true
