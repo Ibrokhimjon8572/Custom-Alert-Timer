@@ -27,3 +27,5 @@ customAlert.show()
 ![Single Button Alert](./RTCustomAlert/Screenshots/Screenshot_1.png)
 ![Two Button Alert](./RTCustomAlert/Screenshots/Screenshot_2.png)
 # Custom-Alert-Timer
+# Custom-Alert-Timer
+# Custom-Alert-Timer
