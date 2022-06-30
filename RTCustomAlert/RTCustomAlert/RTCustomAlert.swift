@@ -83,8 +83,8 @@ class RTCustomAlert: UIViewController {
     func startTimer() {
 //           timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
         
-        //turn thi rx timer
-        
+        //turn the rx timer
+
         Observable<Int>.timer(.seconds(0), period: .seconds(1), scheduler: MainScheduler.instance)
                 .take(self.totalTime+1)
                 .subscribe(onNext: { timePassed in
@@ -110,7 +110,6 @@ class RTCustomAlert: UIViewController {
 //        func endTimer() {
 //            timer.invalidate()
 //        }
-
         func timeFormatted(_ totalSeconds: Int) -> String {
             let seconds: Int = totalSeconds % 60
             let minutes: Int = (totalSeconds / 60) % 60
@@ -118,7 +117,6 @@ class RTCustomAlert: UIViewController {
             return String(format: "%02d:%02d", minutes, seconds)
         }
 //    var disposeBag = DisposeBag()
-//
 //    func setupRX() {
 //        sourceObservable = self.okButton.rx.tap.subscribe(onNext : { _ in
 //            print("Hola mundo")
